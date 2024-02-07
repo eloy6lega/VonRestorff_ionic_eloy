@@ -1,0 +1,7 @@
+{
+  "name": "VonRestorff",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
