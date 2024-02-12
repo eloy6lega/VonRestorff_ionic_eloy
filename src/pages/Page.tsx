@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonInfiniteScroll, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import './Page.css';
@@ -18,7 +18,7 @@ const Page: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen={false}>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">{name}</IonTitle>
@@ -26,6 +26,7 @@ const Page: React.FC = () => {
         </IonHeader>
         <ExploreContainer name={name} />
       </IonContent>
+      
     </IonPage>
   );
 };
